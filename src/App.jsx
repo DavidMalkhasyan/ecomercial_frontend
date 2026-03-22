@@ -82,7 +82,7 @@ function App() {
           </div>
 
           <div className="nav-right">
-            <Link to="/cart" className="cart-link">
+            <Link to="/cart" className="cart-link floating-cart">
               🛒 Корзина ({cartTotal})
             </Link>
             <a href="tel:+79999999999" className="phone-number">
