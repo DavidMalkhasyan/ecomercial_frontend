@@ -1,3 +1,4 @@
+html,
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -5,8 +6,13 @@ body {
     background-color: #fff;
     min-height: 100vh;
     color: #333;
+    overflow-x: hidden;
+    padding-top: env(safe-area-inset-top);
 }
-
+#root {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -823,15 +829,15 @@ h1 {
 }
 
 .card {
-  transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .card:active {
-  transform: scale(0.97);
+    transform: scale(0.97);
 }
 
 .add-btn:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 @keyframes shimmer {
