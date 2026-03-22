@@ -11,10 +11,9 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [cart, setCart] = useState([]);
 
-  // Keep-alive ping to prevent Render from sleeping
   useEffect(() => {
     const pingServer = () => {
-      fetch('https://ecomercial-test.onrender.com/health').catch(() => {}); // Ignore errors
+      fetch('https://ecomercial-test.onrender.com/health').catch(() => {}); 
     };
     
     pingServer(); // Initial ping
